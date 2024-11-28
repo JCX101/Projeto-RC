@@ -1,0 +1,30 @@
+.hero {
+    position: relative;
+    background-image: url('rs720224360-xl.jpeg'); /* Substitua pela imagem do carro */
+    background-size: cover;
+    background-position: center;
+    height: -500px;
+    top: 400px;
+  }
+
+  .info-box {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    background-color: white;
+    padding: 50px 30px;
+    max-width: 450px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para realce */
+    border-radius: 8px; /* Arredondar bordas */
+  }
+
+  .info-box h1 {
+    font-size: 32px;
+    margin: 0 0 10px;
+  }
+
+  .info-box p {
+    font-size: 16px;
+    margin: 0;
+    color: #555;
+  }
