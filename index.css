@@ -1,0 +1,198 @@
+body{
+    background-color: darkgray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    zoom: 90%;
+}
+
+header {
+    background-color: #000;
+    padding: 5px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo img {
+    width: 75px;
+    height: auto;
+    margin-right: 40px; /* Adiciona um pouco de espaço entre o logo e o menu */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+}
+
+nav ul li {
+    margin-right: 30px; /* Espaço entre os links */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/*.content {
+    height: 1000px; //ajuste conforme necessário
+    background-color: #d3d3d3;
+}*/
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 25px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%
+}
+#radio4:checked ~ .first{
+    margin-left: -75%
+}
+#radio5:checked ~ .first{
+    margin-left: -100%
+}
+
+.navigation-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .autobtn1{
+    background-color: #fff;
+}
+#radio2:checked ~ .navigation-auto .autobtn1{
+    background-color: #fff;
+}
+#radio3:checked ~ .navigation-auto .autobtn1{
+    background-color: #fff;
+}
+#radio4:checked ~ .navigation-auto .autobtn1{
+    background-color: #fff;
+}
+#radio5:checked ~ .navigation-auto .autobtn1{
+    background-color: #fff;
+}
+
+   /*Info box*/
+   .hero {
+    position: relative;
+    background-image: url('rs720224360-xl.jpeg'); /* Substitua pela imagem do carro */
+    background-size: cover;
+    background-position: center;
+    height: -500px;
+    top: 180px;
+    margin-left: -110px;
+  }
+
+  .heroo {
+    position: relative;
+    background-image: url('rs720224360-xl.jpeg'); /* Substitua pela imagem do carro */
+    background-size: cover;
+    background-position: center;
+    height: -500px;
+    top: 70px;
+    margin-left: 850px;
+  }
+
+  .info-box {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    background-color: white;
+    padding: 50px 30px;
+    max-width: 450px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para realce */
+    border-radius: 8px; /* Arredondar bordas */
+  }
+
+  .info-box h1 {
+    font-size: 32px;
+    margin: 0 0 10px;
+  }
+
+  .info-box p {
+    font-size: 16px;
+    margin: 0;
+    color: #555;
+  }

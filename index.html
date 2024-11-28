@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="d13679a5d7a1462b0d41e64ae8e49dd7.ico">
+    <title>Audi Portugal</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="INDEX.html">
+                    <img src="transferir.png" alt="">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="historia.html">História</a></li>
+                    <li><a href="categorias.html">Categorias</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="slider">
+        <div class="slides">
+            <!--Radio buttons-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+
+            <!--Slide imagens-->
+            <div class="slide first">
+                <img src="Audi-RS6-Avant-Performance.png" alt="imagem 1">
+            </div>
+            <div class="slide">
+                <img src="audi_rs7_red_100460_1920x1080.jpg" alt="imagem 2">
+            </div>
+            <div class="slide">
+                <img src="audi_s5_tuning_97680_1920x1080.jpg" alt="imagem 3">
+            </div>
+            <div class="slide">
+                <img src="audi_r8_v10_109948_1920x1080.jpg" alt="imagem 4">
+            </div>
+            <div class="slide">
+                <img src="audi_rs4_side_view_101918_1920x1080.jpg" alt="imagem 5">
+            </div>
+
+            <!--Navegação auto-->
+            <div class="navigaton-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+            </div>
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+        </div>
+    </div>
+
+    <script> 
+        let count = 1;
+        document.getElementById("radio1").checked = true;
+
+        setInterval(function(){
+            nextImage();
+        }, 3500)
+
+        function nextImage(){
+            count++;
+            if(count>4){
+                count = 1;
+            }
+
+        document.getElementById("radio"+count).checked = true;
+    }
+    </script>
+    <!--Fim do carrosel/slider-->
+
+    <div class="hero">
+        <div class="info-box">
+          <h1>Desportivos</h1>
+          <p>
+            Os carros desportivos são projetados para oferecer alto desempenho, estilo marcante e uma experiência de condução emocionante.  </p>
+        </div>
+    </div>
+    <div>
+        <a href="desportivos.html">
+            <img  src="S5avantAAAAA.png" style="margin-top: 100px; height: 639px;">
+        </a>
+    </div>
+    
+    <div class="heroo">
+        <div class="info-box">
+          <h1>Desportivos</h1>
+          <p>
+            Os carros desportivos são projetados para oferecer alto desempenho, estilo marcante e uma experiência de condução emocionante.  </p>
+        </div>
+    </div>
+    <div>
+        <a href="eletricos.html">
+            <img src="sq6sport.png" style="height: 641px;">
+        </a>
+    </div> 
+</body>
+</html>
